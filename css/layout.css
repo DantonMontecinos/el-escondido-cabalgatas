@@ -193,6 +193,11 @@
   background-color: var(--color-white);
 }
 
+/* Keep X lines dark when navbar has a light (scrolled) background */
+.navbar--scrolled .navbar__toggle.active .navbar__toggle-line {
+  background-color: var(--color-earth-900);
+}
+
 /* Elevate navbar above the mobile-menu overlay when menu is open
    so the toggle button (X) is clickable */
 .navbar:has(.navbar__toggle.active) {
