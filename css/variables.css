@@ -1,0 +1,165 @@
+/* ═══════════════════════════════════════════
+   DESIGN SYSTEM — El Escondido Cabalgatas
+   Variables CSS / Design Tokens
+   ═══════════════════════════════════════════ */
+
+:root {
+  /* ─── Color Palette ─── */
+  
+  /* Earthy Tones — Primary */
+  --color-earth-900: #2C2418;
+  --color-earth-800: #3D3223;
+  --color-earth-700: #4E412E;
+  --color-earth-600: #5F5039;
+  --color-earth-500: #7A6B52;
+  --color-earth-400: #9A8C73;
+  --color-earth-300: #B8AC96;
+  --color-earth-200: #D4CCBA;
+  --color-earth-100: #E8E3D8;
+  --color-earth-50:  #F4F1EB;
+
+  /* Olive Green — Accent */
+  --color-olive-900: #1A2618;
+  --color-olive-800: #2B3D26;
+  --color-olive-700: #3A5233;
+  --color-olive-600: #4A6840;
+  --color-olive-500: #5C7E4E;
+  --color-olive-400: #7A9A6B;
+  --color-olive-300: #9CB590;
+  --color-olive-200: #BCCFB3;
+  --color-olive-100: #DCE8D6;
+  --color-olive-50:  #EEF4EB;
+
+  /* Warm Beige — Neutral */
+  --color-beige-900: #332E25;
+  --color-beige-800: #4D4536;
+  --color-beige-700: #665C47;
+  --color-beige-600: #807358;
+  --color-beige-500: #998A69;
+  --color-beige-400: #B3A487;
+  --color-beige-300: #CCBEA5;
+  --color-beige-200: #E0D7C6;
+  --color-beige-100: #EDE8DE;
+  --color-beige-50:  #F7F5F0;
+
+  /* Cream / White */
+  --color-cream:     #FAF8F4;
+  --color-white:     #FFFFFF;
+  --color-off-white: #FDFCFA;
+
+  /* Dark */
+  --color-dark:      #1A1714;
+  --color-dark-soft: #2A2520;
+
+  /* Semantic Colors */
+  --color-primary:       var(--color-earth-700);
+  --color-primary-hover: var(--color-earth-800);
+  --color-accent:        var(--color-olive-600);
+  --color-accent-hover:  var(--color-olive-700);
+  --color-text:          var(--color-earth-900);
+  --color-text-soft:     var(--color-earth-500);
+  --color-text-muted:    var(--color-earth-400);
+  --color-background:    var(--color-cream);
+  --color-surface:       var(--color-white);
+  --color-border:        var(--color-beige-200);
+  --color-border-light:  var(--color-beige-100);
+
+  /* ─── Typography ─── */
+  
+  /* Font Families */
+  --font-heading: 'Cormorant Garamond', 'Georgia', serif;
+  --font-body:    'Outfit', 'Helvetica Neue', sans-serif;
+
+  /* Font Sizes — Modular Scale (1.25 ratio) */
+  --text-xs:    0.75rem;    /* 12px */
+  --text-sm:    0.875rem;   /* 14px */
+  --text-base:  1rem;       /* 16px */
+  --text-md:    1.125rem;   /* 18px */
+  --text-lg:    1.25rem;    /* 20px */
+  --text-xl:    1.5rem;     /* 24px */
+  --text-2xl:   1.875rem;   /* 30px */
+  --text-3xl:   2.25rem;    /* 36px */
+  --text-4xl:   3rem;       /* 48px */
+  --text-5xl:   3.75rem;    /* 60px */
+  --text-6xl:   4.5rem;     /* 72px */
+  --text-hero:  clamp(2.5rem, 5vw + 1rem, 5.5rem);
+
+  /* Font Weights */
+  --weight-light:    300;
+  --weight-regular:  400;
+  --weight-medium:   500;
+  --weight-semibold: 600;
+  --weight-bold:     700;
+
+  /* Line Heights */
+  --leading-tight:   1.1;
+  --leading-snug:    1.25;
+  --leading-normal:  1.6;
+  --leading-relaxed: 1.75;
+
+  /* Letter Spacing */
+  --tracking-tight:   -0.02em;
+  --tracking-normal:   0;
+  --tracking-wide:     0.05em;
+  --tracking-wider:    0.1em;
+  --tracking-widest:   0.2em;
+
+  /* ─── Spacing ─── */
+  --space-1:   0.25rem;   /* 4px */
+  --space-2:   0.5rem;    /* 8px */
+  --space-3:   0.75rem;   /* 12px */
+  --space-4:   1rem;      /* 16px */
+  --space-5:   1.25rem;   /* 20px */
+  --space-6:   1.5rem;    /* 24px */
+  --space-8:   2rem;      /* 32px */
+  --space-10:  2.5rem;    /* 40px */
+  --space-12:  3rem;      /* 48px */
+  --space-16:  4rem;      /* 64px */
+  --space-20:  5rem;      /* 80px */
+  --space-24:  6rem;      /* 96px */
+  --space-32:  8rem;      /* 128px */
+  --space-40: 10rem;      /* 160px */
+
+  /* Section Spacing */
+  --section-padding:       clamp(5rem, 10vw, 10rem);
+  --section-padding-small: clamp(3rem, 6vw, 6rem);
+
+  /* ─── Layout ─── */
+  --container-max:    1280px;
+  --container-narrow: 900px;
+  --container-wide:   1440px;
+  --container-padding: clamp(1.25rem, 4vw, 3rem);
+
+  /* ─── Border Radius ─── */
+  --radius-sm:   4px;
+  --radius-md:   8px;
+  --radius-lg:   12px;
+  --radius-xl:   16px;
+  --radius-2xl:  24px;
+  --radius-full: 9999px;
+
+  /* ─── Shadows ─── */
+  --shadow-sm:    0 1px 3px rgba(44, 36, 24, 0.06);
+  --shadow-md:    0 4px 12px rgba(44, 36, 24, 0.08);
+  --shadow-lg:    0 8px 30px rgba(44, 36, 24, 0.10);
+  --shadow-xl:    0 16px 50px rgba(44, 36, 24, 0.12);
+  --shadow-inner: inset 0 2px 4px rgba(44, 36, 24, 0.04);
+
+  /* ─── Transitions ─── */
+  --ease-out:    cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  --duration-fast:   200ms;
+  --duration-normal: 400ms;
+  --duration-slow:   600ms;
+  --duration-slower: 900ms;
+
+  /* ─── Z-Index Scale ─── */
+  --z-base:     1;
+  --z-dropdown: 100;
+  --z-sticky:   200;
+  --z-overlay:  300;
+  --z-modal:    400;
+  --z-toast:    500;
+}

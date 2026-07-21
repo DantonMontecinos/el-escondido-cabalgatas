@@ -1,0 +1,258 @@
+/* ═══════════════════════════════════════════
+   RESPONSIVE — El Escondido Cabalgatas
+   Mobile-first Breakpoints
+   ═══════════════════════════════════════════ */
+
+/* ─── Tablet (max-width: 1024px) ─── */
+@media (max-width: 1024px) {
+  /* Navbar */
+  .navbar__menu {
+    display: none;
+  }
+
+  .navbar__toggle {
+    display: flex;
+  }
+
+  /* Experience */
+  .experience-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-8);
+  }
+
+  .experience-card:last-child {
+    grid-column: 1 / -1;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  /* Rides */
+  .rides-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-6);
+  }
+
+  .rides-grid .ride-card:last-child {
+    grid-column: 1 / -1;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  /* About */
+  .about-layout {
+    gap: var(--space-10);
+  }
+
+  /* Gallery */
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 250px;
+  }
+
+  .gallery-item--wide {
+    grid-column: span 1;
+  }
+
+  /* Includes */
+  .includes-grid {
+    gap: var(--space-6);
+  }
+
+  /* Testimonials */
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-6);
+  }
+
+  .testimonials-grid .testimonial:last-child {
+    grid-column: 1 / -1;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  /* Contact */
+  .contact-layout {
+    gap: var(--space-10);
+  }
+
+  /* Footer */
+  .footer__main {
+    grid-template-columns: 1fr;
+    gap: var(--space-10);
+  }
+
+  .footer__links {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ─── Small Tablet / Large Phone (max-width: 768px) ─── */
+@media (max-width: 768px) {
+  /* Hero */
+  .hero__title {
+    font-size: clamp(2rem, 7vw, 3.5rem);
+  }
+
+  .hero__description {
+    font-size: var(--text-base);
+  }
+
+  /* About */
+  .about-layout {
+    grid-template-columns: 1fr;
+    gap: var(--space-10);
+  }
+
+  .about-layout__img {
+    padding-bottom: 70%;
+  }
+
+  .about-layout__stats {
+    gap: var(--space-8);
+  }
+
+  .stat__number {
+    font-size: var(--text-3xl);
+  }
+
+  /* Rides */
+  .rides-grid {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .rides-grid .ride-card:last-child {
+    grid-column: auto;
+    max-width: none;
+  }
+
+  /* Gallery */
+  .gallery-grid {
+    grid-auto-rows: 220px;
+    gap: var(--space-3);
+  }
+
+  /* Includes */
+  .includes-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* FAQ */
+  .faq-item__question {
+    padding: var(--space-5) var(--space-6);
+    font-size: var(--text-base);
+  }
+
+  .faq-item__answer {
+    padding: 0 var(--space-6) var(--space-6);
+  }
+
+  /* Testimonials */
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .testimonials-grid .testimonial:last-child {
+    grid-column: auto;
+    max-width: none;
+  }
+
+  /* Contact */
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form {
+    padding: var(--space-8);
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: var(--space-6);
+  }
+
+  /* Footer */
+  .footer__links {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-8);
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    gap: var(--space-4);
+    text-align: center;
+  }
+
+  /* Fullbleed */
+  .fullbleed {
+    height: 50vh;
+    min-height: 300px;
+  }
+
+  /* CTA Banner */
+  .cta-banner {
+    height: 40vh;
+    min-height: 350px;
+  }
+
+  .cta-banner__bg {
+    background-attachment: scroll;
+  }
+}
+
+/* ─── Phone (max-width: 480px) ─── */
+@media (max-width: 480px) {
+  /* Experience */
+  .experience-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+
+  .experience-card:last-child {
+    max-width: none;
+  }
+
+  .experience-card {
+    padding: var(--space-8) var(--space-4);
+  }
+
+  /* Gallery */
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 200px;
+  }
+
+  /* Mobile Menu Links */
+  .mobile-menu__link {
+    font-size: var(--text-2xl);
+  }
+
+  /* Footer */
+  .footer__links {
+    grid-template-columns: 1fr;
+  }
+
+  /* Stats */
+  .about-layout__stats {
+    flex-direction: column;
+    gap: var(--space-6);
+  }
+
+  /* Contact Form */
+  .contact-form {
+    padding: var(--space-6);
+  }
+
+  /* Ride card height */
+  .ride-card__image-wrapper {
+    height: 240px;
+  }
+
+  /* Scroll indicator - hide on very small screens */
+  .hero__scroll {
+    display: none;
+  }
+}

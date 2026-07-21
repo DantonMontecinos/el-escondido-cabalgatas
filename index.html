@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Escondido Cabalgatas</title>
+  <meta name="description"
+    content="Viví la experiencia exclusiva de cabalgar por las sierras de Córdoba. Naturaleza, tranquilidad y aventura a 15 minutos de Villa General Belgrano.">
+  <meta property="og:title" content="El Escondido Cabalgatas — Sierras de Córdoba, Argentina">
+  <meta property="og:description"
+    content="Cabalgatas guiadas, paisajes serranos y acceso exclusivo al Río Los Reartes desde Glamping El Escondido.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Outfit:wght@200;300;400;500;600&display=swap"
+    rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+
+<body>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- NAVIGATION                                  -->
+  <!-- ═══════════════════════════════════════════ -->
+  <header id="navbar" class="navbar" role="banner">
+    <div class="navbar__container">
+      <a href="#hero" class="navbar__brand" aria-label="El Escondido Cabalgatas - Inicio">
+        <span class="navbar__logo-text">El Escondido</span>
+        <span class="navbar__logo-sub">Cabalgatas</span>
+      </a>
+
+      <nav class="navbar__menu" id="nav-menu" role="navigation" aria-label="Navegación principal">
+        <ul class="navbar__list">
+          <li><a href="#experiencia" class="navbar__link">Experiencia</a></li>
+          <li><a href="#cabalgatas" class="navbar__link">Cabalgatas</a></li>
+          <li><a href="#rio" class="navbar__link">El Río</a></li>
+          <li><a href="#nosotros" class="navbar__link">Nosotros</a></li>
+          <li><a href="#galeria" class="navbar__link">Galería</a></li>
+          <li><a href="#contacto" class="navbar__link">Contacto</a></li>
+          <li><a href="#contacto" class="navbar__link navbar__link--cta">Reservar</a></li>
+        </ul>
+      </nav>
+
+      <button class="navbar__toggle" id="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span class="navbar__toggle-line"></span>
+        <span class="navbar__toggle-line"></span>
+        <span class="navbar__toggle-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Overlay Menu -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <div class="mobile-menu__content">
+      <ul class="mobile-menu__list">
+        <li><a href="#experiencia" class="mobile-menu__link">Experiencia</a></li>
+        <li><a href="#cabalgatas" class="mobile-menu__link">Cabalgatas</a></li>
+        <li><a href="#rio" class="mobile-menu__link">El Río</a></li>
+        <li><a href="#nosotros" class="mobile-menu__link">Nosotros</a></li>
+        <li><a href="#galeria" class="mobile-menu__link">Galería</a></li>
+        <li><a href="#contacto" class="mobile-menu__link">Contacto</a></li>
+        <li><a href="#contacto" class="mobile-menu__link mobile-menu__link--cta">Reservar Ahora</a></li>
+      </ul>
+      <div class="mobile-menu__footer">
+        <p>A 15 min de Villa General Belgrano</p>
+        <p>Glamping El Escondido, Córdoba</p>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- HERO SECTION                                -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section id="hero" class="hero">
+      <div class="hero__media">
+        <video class="hero__video" autoplay muted loop playsinline poster="img/paisaje_caballos.jpg">
+          <source src="video/video_experiencia_cabalgatas_paisajes.MOV" type="video/mp4">
+          <source src="video/caballos.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="hero__overlay"></div>
+
+      <div class="hero__content">
+
+        <h1 class="hero__title reveal-up delay-1" style="font-size: clamp(2.5rem, 6vw, 4.5rem); margin-bottom: 2rem;">
+          El Escondido Cabalgatas
+        </h1>
+
+        <a href="#contacto" class="btn btn--primary hero__cta reveal-up delay-3">Reservar Experiencia</a>
+      </div>
+
+
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- GUÍA                                        -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section id="guia" class="section section--about">
+      <div class="container">
+        <div class="about-layout">
+          <div class="about-layout__image reveal-scale">
+            <div class="about-layout__img" role="img" aria-label="Guía Nicolas Larralde"
+              style="background-image: url('img/guia_larralde.jpg');"></div>
+          </div>
+          <div class="about-layout__content">
+            <h2 class="section__title reveal-up">Tu guía de cabalgatas</h2>
+            <p class="about-layout__text reveal-up delay-1"><strong>Nicolas Larralde</strong></p>
+            <p class="about-layout__text reveal-up delay-2">
+              Guía de cabalgatas bilingüe (ES/EN), con experiencia en El Calafate, Bariloche y las Sierras de Córdoba.
+              Ha guiado a más de 500 personas recorriendo algunos de los paisajes más emblemáticos de Argentina.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- 1. NUESTRA EXPERIENCIA                      -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section id="experiencia" class="section section--experience">
+      <div class="container">
+        <div class="section__header section__header--centered">
+          <span class="section__label reveal-up">Nuestra Experiencia</span>
+          <h2 class="section__title section__title--large reveal-up delay-1">
+            Una inmersión profunda<br>en las sierras de Córdoba
+          </h2>
+          <p class="section__description reveal-up delay-2">
+            Más que una cabalgata guiada, es una invitación a desconectar del ruido.
+            Nuestros recorridos combinan la tranquilidad de los bosques y la majestuosidad de los paisajes serranos
+            con un acceso exclusivo al Río Los Reartes, todo desde la comodidad del entorno de Glamping El Escondido.
+          </p>
+        </div>
+
+        <div class="experience-grid">
+          <div class="experience-card reveal-up">
+            <div class="experience-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-trees" aria-hidden="true">
+                <path d="M10 10v.2A3 3 0 0 1 8.9 16H5a3 3 0 0 1-1-5.8V10a3 3 0 0 1 6 0Z" />
+                <path d="M7 16v6" />
+                <path d="M13 19v3" />
+                <path
+                  d="M12 19h8.3a1 1 0 0 0 .7-1.7L18 14h.3a1 1 0 0 0 .7-1.7L16 9h.2a1 1 0 0 0 .8-1.7L14 3l-3 4.3a1 1 0 0 0 .8 1.7H12l-2 3.3a1 1 0 0 0 .8 1.7H11l-1.4 1.9" />
+              </svg>
+            </div>
+            <h3 class="experience-card__title">Bosques y Senderos</h3>
+            <p class="experience-card__text">Cabalgarás a través de antiguas forestaciones y senderos nativos,
+              conectando profundamente con la naturaleza y el paisaje serrano.</p>
+          </div>
+
+          <div class="experience-card reveal-up delay-1">
+            <div class="experience-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-waves" aria-hidden="true">
+                <path d="M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1" />
+                <path d="M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1" />
+                <path d="M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1" />
+              </svg>
+            </div>
+            <h3 class="experience-card__title">Acceso Exclusivo</h3>
+            <p class="experience-card__text">Llegamos a rincones privilegiados y playas privadas del Río Los Reartes, un
+              entorno natural virgen reservado para nuestra experiencia.</p>
+          </div>
+
+          <div class="experience-card reveal-up delay-2">
+            <div class="experience-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-sparkles" aria-hidden="true">
+                <path
+                  d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z" />
+                <path d="M20 3v4" />
+                <path d="M22 5h-4" />
+                <path d="M4 17v2" />
+                <path d="M5 18H3" />
+              </svg>
+            </div>
+            <h3 class="experience-card__title">Experiencia única</h3>
+            <p class="experience-card__text">Ubicados en el predio de Glamping El Escondido, garantizamos atención
+              personalizada, calidez y un nivel internacional de servicio.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fullbleed Image Divider -->
+    <div class="fullbleed reveal-scale">
+      <div class="fullbleed__image" role="img" aria-label="Caballos en las sierras de Córdoba"
+        style="background-image: url('img/paisaje_caballos.jpg'); background-position: 50% 50%;">
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- 2. LAS CABALGATAS                           -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section id="cabalgatas" class="section section--rides">
+      <div class="container">
+        <div class="section__header section__header--centered">
+          <span class="section__label reveal-up">Nuestras Cabalgatas</span>
+          <h2 class="section__title reveal-up delay-1">Elegí tu aventura</h2>
+        </div>
+
+        <div class="rides-grid">
+          <!-- Ride Card 1: El Pinar -->
+          <article class="ride-card reveal-up">
+            <div class="ride-card__image-wrapper">
+              <div class="ride-card__image" role="img" aria-label="Cabalgata por el pinar"
+                style="background-image: url('img/caballo_negro.jpg');"></div>
+              <div class="ride-card__badge">45 minutos</div>
+            </div>
+            <div class="ride-card__content">
+              <h3 class="ride-card__title">El Pinar</h3>
+              <p class="ride-card__text">
+                Un paseo suave entre antiguas forestaciones, ideal para quienes buscan una primera experiencia o un
+                recorrido más corto. Durante el trayecto recorremos un pinar centenario mientras compartimos la historia
+                del campo y de cómo fue transformándose con el paso del tiempo.
+              </p>
+              <div class="ride-card__details">
+                <span class="ride-card__detail">
+                  <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                    <circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="1.2" />
+                    <path d="M10 6V10L13 13" stroke="currentColor" stroke-width="1.2" />
+                  </svg>
+                  45 min
+                </span>
+              </div>
+              <a href="#contacto" class="btn btn--outline ride-card__cta">Reservar</a>
+            </div>
+          </article>
+
+          <!-- Ride Card 2: Valle de la Luna -->
+          <article class="ride-card reveal-up delay-1">
+            <div class="ride-card__image-wrapper">
+              <div class="ride-card__image" role="img" aria-label="Cabalgata al Valle de la Luna"
+                style="background-image: url('img/exurcion_caballos_gente.jpg');"></div>
+              <div class="ride-card__badge">1h 30m</div>
+            </div>
+            <div class="ride-card__content">
+              <h3 class="ride-card__title">Valle de la Luna</h3>
+              <p class="ride-card__text">
+                Cabalgamos hasta una vertiente natural que, gracias a la erosión y los sedimentos de arcilla, formó un
+                paisaje muy particular que recuerda a un pequeño Valle de la Luna. Es una experiencia con mayor contacto
+                con la naturaleza y vistas panorámicas únicas.
+              </p>
+              <div class="ride-card__details">
+                <span class="ride-card__detail">
+                  <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                    <circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="1.2" />
+                    <path d="M10 6V10L13 13" stroke="currentColor" stroke-width="1.2" />
+                  </svg>
+                  1h 30m
+                </span>
+              </div>
+              <a href="#contacto" class="btn btn--outline ride-card__cta">Reservar</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- 2.5. DESPUÉS DE LA CABALGATA                -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section id="rio" class="section section--after-ride">
+      <div class="container">
+        <div class="about-layout about-layout--reverse">
+          <div class="about-layout__image reveal-scale">
+            <div class="about-layout__img" style="background-image: url('img/paisaje_caballos.jpg');"></div>
+          </div>
+          <div class="about-layout__content">
+            <span class="section__label reveal-up">Después de la Cabalgata...</span>
+            <h2 class="section__title reveal-up delay-1">El relax continúa<br>junto al río</h2>
+            <p class="about-layout__text reveal-up delay-2">
+              En cualquiera de las dos experiencias, la aventura no termina al bajarte del caballo.
+              Podrás quedarte disfrutando de un acceso exclusivo a nuestras playas privadas del Río Los Reartes.
+            </p>
+            <p class="about-layout__text reveal-up delay-3">
+              Un momento pensado para conectar con la tranquilidad del agua, relajarse bajo el sol serrano
+              y sentir la calma que ofrece el entorno de Glamping El Escondido. Un verdadero lujo en la naturaleza.
+            </p>
+            <div style="margin-top: var(--space-8);" class="reveal-up delay-3">
+              <a href="#contacto" class="btn btn--outline">Consultar disponibilidad</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fullbleed Video Divider -->
+    <div class="fullbleed reveal-scale">
+      <video class="fullbleed__image" autoplay muted loop playsinline style="object-fit: cover;">
+        <source src="video/cabalgando_caballo.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- 4. GALERÍA                                  -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section id="galeria" class="section section--gallery">
+      <div class="container">
+        <div class="section__header section__header--centered">
+          <span class="section__label reveal-up">Nuestra Esencia Visual</span>
+          <h2 class="section__title reveal-up delay-1">Momentos de conexión</h2>
+        </div>
+
+        <div class="gallery-grid">
+          <!-- Item 1: Wide video -->
+          <div class="gallery-item gallery-item--wide reveal-up">
+            <video class="gallery-item__image" autoplay muted loop playsinline style="object-fit: cover;">
+              <source src="video/monta_caballo.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <!-- Item 2: Tall image -->
+          <div class="gallery-item gallery-item--tall reveal-up delay-1">
+            <div class="gallery-item__image" role="img" aria-label="Guía"
+              style="background-image: url('img/guia_arriba_caballo.jpg');"></div>
+          </div>
+
+          <!-- Item 3: Normal video -->
+          <div class="gallery-item reveal-up delay-2">
+            <video class="gallery-item__image" autoplay muted loop playsinline style="object-fit: cover;">
+              <source src="video/encillando_caballo.mp4" type="video/mp4">
+            </video>
+          </div>
+
+          <!-- Item 4: Normal image -->
+          <div class="gallery-item reveal-up delay-1">
+            <div class="gallery-item__image" role="img" aria-label="Herraduras"
+              style="background-image: url('img/mesa-herraduras.jpg'); background-position: center bottom;"></div>
+          </div>
+
+          <!-- Item 5: Wide image -->
+          <div class="gallery-item gallery-item--wide reveal-up delay-2">
+            <div class="gallery-item__image" role="img" aria-label="Caballos"
+              style="background-image: url('img/dos_caballos.jpg'); background-position: center 30%;"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- 3. SOBRE NOSOTROS                           -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section id="nosotros" class="section section--about">
+      <div class="container">
+        <div class="about-layout">
+          <div class="about-layout__image reveal-scale">
+            <div class="about-layout__img" role="img" aria-label="Puesto de campo"
+              style="background-image: url('img/puesto_de_campo.jpg');"></div>
+          </div>
+          <div class="about-layout__content">
+            <span class="section__label reveal-up">Sobre Nosotros</span>
+            <h2 class="section__title reveal-up delay-1">Autenticidad y<br>respeto por la tierra</h2>
+            <p class="about-layout__text reveal-up delay-2">
+              El Escondido Cabalgatas nace de nuestra conexión profunda con estas sierras. Vivimos y respiramos este
+              paisaje todos los días, y queremos compartir su magia con vos.
+            </p>
+            <p class="about-layout__text reveal-up delay-2">
+              Desarrollamos nuestra actividad dentro del exclusivo predio de Glamping El Escondido. Aquí, cada sendero
+              tiene historia y cada caballo es parte de nuestra familia. Te recibimos con la calidez del hogar y el
+              profesionalismo que requiere una experiencia segura, auténtica e inolvidable.
+            </p>
+            <div class="about-layout__stats reveal-up delay-3">
+              <div class="stat">
+                <span class="stat__number">15</span>
+                <span class="stat__label">Minutos de VGB</span>
+              </div>
+              <div class="stat">
+                <span class="stat__number">100%</span>
+                <span class="stat__label">Naturaleza virgen</span>
+              </div>
+              <div class="stat">
+                <span class="stat__number">2</span>
+                <span class="stat__label">Experiencias únicas</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- 5. QUÉ INCLUYE                              -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section id="incluye" class="section section--includes">
+      <div class="container">
+        <div class="includes-layout">
+          <div class="includes-layout__content">
+            <span class="section__label reveal-up">Experiencia única</span>
+            <h2 class="section__title reveal-up delay-1">Qué incluye la experiencia</h2>
+            <p class="section__description reveal-up delay-2">
+              Todo está pensado para que te relajes y disfrutes del entorno serrano.
+            </p>
+          </div>
+
+          <div class="includes-grid">
+            <div class="include-item reveal-up">
+              <div class="include-item__icon">
+                <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+                  <circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="1.2" />
+                  <path d="M16 24L22 30L32 18" stroke="currentColor" stroke-width="1.5" />
+                </svg>
+              </div>
+              <div class="include-item__content">
+                <h4 class="include-item__title">Caballo preparado</h4>
+                <p class="include-item__text">Caballos mansos y entrenados, con equipamiento completo para garantizar tu
+                  comodidad y seguridad durante la actividad.</p>
+              </div>
+            </div>
+
+            <div class="include-item reveal-up delay-1">
+              <div class="include-item__icon">
+                <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+                  <circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="1.2" />
+                  <path d="M16 24L22 30L32 18" stroke="currentColor" stroke-width="1.5" />
+                </svg>
+              </div>
+              <div class="include-item__content">
+                <h4 class="include-item__title">Guía experto</h4>
+                <p class="include-item__text">Acompañamiento profesional durante todo el recorrido para asistirte y
+                  contarte las historias del lugar.</p>
+              </div>
+            </div>
+
+            <div class="include-item reveal-up delay-2">
+              <div class="include-item__icon">
+                <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+                  <circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="1.2" />
+                  <path d="M16 24L22 30L32 18" stroke="currentColor" stroke-width="1.5" />
+                </svg>
+              </div>
+              <div class="include-item__content">
+                <h4 class="include-item__title">Senderos naturales</h4>
+                <p class="include-item__text">Recorridos trazados a través de bosques nativos, pinares centenarios y
+                  miradores panorámicos de la sierra.</p>
+              </div>
+            </div>
+
+            <div class="include-item reveal-up delay-1">
+              <div class="include-item__icon">
+                <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+                  <circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="1.2" />
+                  <path d="M16 24L22 30L32 18" stroke="currentColor" stroke-width="1.5" />
+                </svg>
+              </div>
+              <div class="include-item__content">
+                <h4 class="include-item__title">Acceso exclusivo al río</h4>
+                <p class="include-item__text">Al finalizar la cabalgata, podrás disfrutar de las playas privadas y aguas
+                  tranquilas del Río Los Reartes.</p>
+              </div>
+            </div>
+
+            <div class="include-item reveal-up delay-2">
+              <div class="include-item__icon">
+                <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+                  <circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="1.2" />
+                  <path d="M16 24L22 30L32 18" stroke="currentColor" stroke-width="1.5" />
+                </svg>
+              </div>
+              <div class="include-item__content">
+                <h4 class="include-item__title">Entorno único</h4>
+                <p class="include-item__text">Todas las actividades se desarrollan en la exclusividad y privacidad del
+                  predio Glamping El Escondido.</p>
+              </div>
+            </div>
+
+            <div class="include-item reveal-up delay-3">
+              <div class="include-item__icon">
+                <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+                  <circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="1.2" />
+                  <path d="M16 24L22 30L32 18" stroke="currentColor" stroke-width="1.5" />
+                </svg>
+              </div>
+              <div class="include-item__content">
+                <h4 class="include-item__title">Experiencia segura</h4>
+                <p class="include-item__text">Instrucción previa y atención personalizada para que te sientas seguro y
+                  disfrutes en todo momento.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- 6. PREGUNTAS FRECUENTES                     -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section id="faq" class="section section--faq">
+      <div class="container container--narrow">
+        <div class="section__header section__header--centered">
+          <span class="section__label reveal-up">Preguntas Frecuentes</span>
+          <h2 class="section__title reveal-up delay-1">Todo lo que necesitás saber</h2>
+        </div>
+
+        <div class="faq-list">
+          <details class="faq-item reveal-up">
+            <summary class="faq-item__question">
+              <span>¿Necesito experiencia previa para cabalgar?</span>
+              <span class="faq-item__icon" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-item__answer">
+              <p>No, nuestras cabalgatas están diseñadas para que cualquier persona pueda disfrutarlas. Los caballos son
+                mansos, están acostumbrados a los senderos y los guías brindan una pequeña introducción antes de montar.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq-item reveal-up delay-1">
+            <summary class="faq-item__question">
+              <span>¿Cuál es la edad mínima para participar?</span>
+              <span class="faq-item__icon" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-item__answer">
+              <p>Sugerimos que los participantes tengan al menos 6 años. Los niños realizan el recorrido con caballos
+                adaptados a su nivel y bajo la estricta supervisión de nuestros guías.</p>
+            </div>
+          </details>
+
+          <details class="faq-item reveal-up delay-1">
+            <summary class="faq-item__question">
+              <span>¿Qué tipo de ropa debo llevar?</span>
+              <span class="faq-item__icon" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-item__answer">
+              <p>Es indispensable llevar pantalón largo cómodo (jean, bombacha de campo o calzas deportivas) y calzado
+                cerrado (zapatillas o botas). También recomendamos usar protector solar y sombrero o gorra.</p>
+            </div>
+          </details>
+
+          <details class="faq-item reveal-up delay-2">
+            <summary class="faq-item__question">
+              <span>¿Cómo funciona el acceso al Río Los Reartes?</span>
+              <span class="faq-item__icon" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-item__answer">
+              <p>Al finalizar cualquiera de nuestras dos cabalgatas, tenés la posibilidad de quedarte a pasar el día o
+                disfrutar unas horas de nuestro acceso exclusivo al río, ubicado dentro del predio privado de Glamping
+                El Escondido.</p>
+            </div>
+          </details>
+
+          <details class="faq-item reveal-up delay-2">
+            <summary class="faq-item__question">
+              <span>¿Qué pasa si llueve o hay mal clima?</span>
+              <span class="faq-item__icon" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-item__answer">
+              <p>La seguridad de nuestros jinetes y caballos es prioridad. En caso de lluvia fuerte o tormenta,
+                reprogramamos la actividad o realizamos el reintegro de la seña. Con llovizna muy leve o clima nublado,
+                las cabalgatas se realizan normalmente.</p>
+            </div>
+          </details>
+
+          <details class="faq-item reveal-up delay-3">
+            <summary class="faq-item__question">
+              <span>¿Cómo se realiza la reserva y qué formas de pago aceptan?</span>
+              <span class="faq-item__icon" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-item__answer">
+              <p>Las reservas se confirman con una seña previa mediante transferencia bancaria. El saldo restante se
+                puede abonar en efectivo, transferencia o MercadoPago el mismo día de la actividad. Recomendamos
+                reservar con anticipación.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- CTA Banner                                  -->
+    <!-- ═══════════════════════════════════════════ -->
+    <div class="cta-banner">
+      <div class="cta-banner__bg" role="img" aria-label="Caballos"
+        style="background-image: url('img/dos-caballos.jpg'); background-position: center 20%;">
+      </div>
+      <div class="cta-banner__overlay"></div>
+      <div class="cta-banner__content">
+        <p class="cta-banner__label reveal-up">¿Listo para la aventura?</p>
+        <h2 class="cta-banner__title reveal-up delay-1">Conectá con las sierras</h2>
+        <a href="#contacto" class="btn btn--white cta-banner__btn reveal-up delay-2">Reservar ahora</a>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- 8. CONTACTO                                 -->
+    <!-- ═══════════════════════════════════════════ -->
+    <section id="contacto" class="section section--contact">
+      <div class="container">
+        <div class="contact-layout">
+          <div class="contact-layout__info">
+            <span class="section__label reveal-up">Contacto</span>
+            <h2 class="section__title reveal-up delay-1">Escribinos y<br>empezá a planear<br>tu aventura</h2>
+            <div class="contact-details reveal-up delay-2">
+              <div class="contact-detail">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"
+                    stroke="currentColor" stroke-width="1.5" />
+                  <circle cx="12" cy="9" r="2.5" stroke="currentColor" stroke-width="1.5" />
+                </svg>
+                <div>
+                  <strong>Ubicación Privilegiada</strong>
+                  <p>Estamos a solo 15 minutos de<br>Villa General Belgrano, Córdoba.</p>
+                  <p style="margin-top: 4px;">Predio Glamping El Escondido.</p>
+                </div>
+              </div>
+              <div class="contact-detail">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path
+                    d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"
+                    stroke="currentColor" stroke-width="1.5" />
+                </svg>
+                <div>
+                  <strong>Teléfono / WhatsApp</strong>
+                  <p>+54 9 3517 47-7608</p>
+                </div>
+              </div>
+              <div class="contact-detail">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="1.5" />
+                  <path d="M22 7L13.03 12.7a2 2 0 01-2.06 0L2 7" stroke="currentColor" stroke-width="1.5" />
+                </svg>
+                <div>
+                  <strong>Email</strong>
+                  <p>Elescondidocabalgatas@gmail.com</p>
+                </div>
+              </div>
+              <div class="contact-detail">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" />
+                  <path d="M12 6v6l4 2" stroke="currentColor" stroke-width="1.5" />
+                </svg>
+                <div>
+                  <strong>Horarios</strong>
+                  <p>Todos los días con reserva previa</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-layout__form reveal-up delay-1">
+            <form id="contact-form" class="contact-form" novalidate>
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Nombre completo</label>
+                <input type="text" id="contact-name" name="name" class="form-input" placeholder="Tu nombre" required>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-email" class="form-label">Email</label>
+                  <input type="email" id="contact-email" name="email" class="form-input" placeholder="tu@email.com"
+                    required>
+                </div>
+                <div class="form-group">
+                  <label for="contact-phone" class="form-label">Teléfono / WhatsApp</label>
+                  <input type="tel" id="contact-phone" name="phone" class="form-input" placeholder="+54 9...">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="contact-ride" class="form-label">Cabalgata de interés</label>
+                <select id="contact-ride" name="ride" class="form-input form-select">
+                  <option value="" disabled selected>Seleccioná una opción</option>
+                  <option value="pinar">El Pinar (45 min)</option>
+                  <option value="valle-luna">Valle de la Luna (1h 30m)</option>
+                  <option value="otra">Otra consulta</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Mensaje</label>
+                <textarea id="contact-message" name="message" class="form-input form-textarea"
+                  placeholder="Indicanos para qué fecha te gustaría reservar y la cantidad de personas..."
+                  rows="5"></textarea>
+              </div>
+              <button type="submit" id="contact-submit" class="btn btn--primary form-submit">Enviar Consulta</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- 9. FOOTER                                   -->
+  <!-- ═══════════════════════════════════════════ -->
+  <footer id="footer" class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__main">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <span class="footer__logo-text">El Escondido</span>
+            <span class="footer__logo-sub">Cabalgatas</span>
+          </div>
+          <p class="footer__description">
+            Turismo ecuestre de experiencia única en las sierras.<br>
+            Glamping El Escondido, a 15 minutos de<br>
+            Villa General Belgrano, Córdoba, Argentina.
+          </p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5" />
+                <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="1.5" />
+                <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" />
+              </svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" stroke="currentColor"
+                  stroke-width="1.5" />
+              </svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path
+                  d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"
+                  stroke="currentColor" stroke-width="1.5" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer__links">
+          <div class="footer__column">
+            <h4 class="footer__column-title">Navegación</h4>
+            <ul class="footer__list">
+              <li><a href="#experiencia" class="footer__link">Experiencia</a></li>
+              <li><a href="#cabalgatas" class="footer__link">Cabalgatas</a></li>
+              <li><a href="#rio" class="footer__link">El Río</a></li>
+              <li><a href="#nosotros" class="footer__link">Nosotros</a></li>
+              <li><a href="#galeria" class="footer__link">Galería</a></li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <h4 class="footer__column-title">Información</h4>
+            <ul class="footer__list">
+              <li><a href="#faq" class="footer__link">Preguntas Frecuentes</a></li>
+              <li><a href="#incluye" class="footer__link">Qué Incluye</a></li>
+              <li><a href="#contacto" class="footer__link">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <h4 class="footer__column-title">Contacto</h4>
+            <ul class="footer__list">
+              <li class="footer__text">Villa General Belgrano</li>
+              <li class="footer__text">Córdoba, Argentina</li>
+              <li class="footer__text">+54 9 3517 47-7608</li>
+              <li><a href="mailto:Elescondidocabalgatas@gmail.com"
+                  class="footer__link">Elescondidocabalgatas@gmail.com</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__divider"></div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">© 2026 El Escondido Cabalgatas. Todos los derechos reservados.</p>
+        <div class="footer__legal">
+          <a href="#" class="footer__link">Política de Privacidad</a>
+          <a href="#" class="footer__link">Términos y Condiciones</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
