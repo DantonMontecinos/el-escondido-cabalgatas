@@ -81,6 +81,13 @@ const MobileMenu = (() => {
       link.addEventListener('click', closeMenu);
     });
 
+    // Close when tapping the overlay background (outside menu content)
+    menu.addEventListener('click', (e) => {
+      if (e.target === menu) {
+        closeMenu();
+      }
+    });
+
     // Close on Escape
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape' && isOpen) {
@@ -97,6 +104,7 @@ const MobileMenu = (() => {
     isOpen = true;
     toggle.classList.add('active');
     toggle.setAttribute('aria-expanded', 'true');
+    toggle.setAttribute('aria-label', 'Cerrar menú');
     menu.classList.add('active');
     menu.setAttribute('aria-hidden', 'false');
     document.body.style.overflow = 'hidden';
@@ -106,6 +114,7 @@ const MobileMenu = (() => {
     isOpen = false;
     toggle.classList.remove('active');
     toggle.setAttribute('aria-expanded', 'false');
+    toggle.setAttribute('aria-label', 'Abrir menú');
     menu.classList.remove('active');
     menu.setAttribute('aria-hidden', 'true');
     document.body.style.overflow = '';
