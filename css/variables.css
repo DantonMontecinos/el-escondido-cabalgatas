@@ -129,6 +129,7 @@
   --container-narrow: 900px;
   --container-wide:   1440px;
   --container-padding: clamp(1.25rem, 4vw, 3rem);
+  --navbar-height:    5rem;    /* 80px — used for scroll offset & mobile menu clearance */
 
   /* ─── Border Radius ─── */
   --radius-sm:   4px;
